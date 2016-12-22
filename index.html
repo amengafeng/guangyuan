@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="renderer" content="webkit">
+    <title>{if isset($SEO['title']) && !empty($SEO['title'])}{$SEO['title']}{/if}{$SEO['site_title']}</title>
+    <meta name="keywords" content="{$SEO['keyword']}">
+    <meta name="description" content="{$SEO['description']}">
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/mystyle.css">
+    <link href="http://cdn.bootcss.com/normalize/5.0.0/normalize.css" rel="stylesheet">
+    <script src="http://cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
+    <style type="text/css">
+        body,
+        td,
+        th {
+            font-family: "Microsoft YaHei", STHeiti, "WenQuanYi Micro Hei", SimSun, Oxygen, Arial, "Hiragino Sans GB", sans-serif;
+        }
+    </style>
+    <script src="js/jquery.SuperSlide.2.1.js"></script>
+    <!--[if lt IE 9]>
+	     <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	     <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+    <script type="text/javascript">
+        if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+            var msViewportStyle = document.createElement('style')
+            msViewportStyle.appendChild(
+                document.createTextNode(
+                    '@-ms-viewport{width:auto!important}'
+                )
+            )
+            document.querySelector('head').appendChild(msViewportStyle)
+        }
+    </script>
+    <script>
+        $(function() {
+            var nua = navigator.userAgent
+            var isAndroid = (nua.indexOf('Mozilla/5.0') > -1 && nua.indexOf('Android ') > -1 && nua.indexOf('AppleWebKit') > -1 && nua.indexOf('Chrome') === -1)
+            if (isAndroid) {
+                $('select.form-control').removeClass('form-control').css('width', '100%')
+            }
+        })
+    </script>
+</head>
+
+<body>
+    <div class="box header">
+        <div class="logo pull-left">
+            <a href="/"><img src="images/logo.png" alt="广源置业logo"></a>
+        </div>
+        <div class="pull-right">
+            <p>欢迎访问铜仁市万山区开源投资集团广源置业有限责任公司网站</p>
+        </div>
+        <div class="cl10"></div>
+        <div class="navBar">
+            <ul class="nav clearfix">
+                <li id="m1" class="m on">
+                    <h3><a target="_blank" href="">网站首页</a></h3>
+                </li>
+                <li class="s">|</li>
+                <li id="m2" class="m">
+                    <h3><a target="_blank" href="">关于我们</a></h3>
+                    <ul class="sub">
+                        <li><a href="#">如何使用</a></li>
+                        <li><a href="#">如何使用</a></li>
+                    </ul>
+                </li>
+                <li class="s">|</li>
+                <li id="m3" class="m">
+                    <h3><a target="_blank" href="">新闻中心</a></h3>
+                    <ul class="sub">
+                        <li><a href="#">查看参数</a></li>
+                        <li><a href="#">查看参数</a></li>
+                    </ul>
+                </li>
+                <li class="s">|</li>
+                <li id="m4" class="m">
+                    <h3><a target="_blank" href="">企业文化</a></h3>
+                    <ul class="sub">
+                        <li><a href="#">基础效果</a></li>
+                        <li><a href="#">基础效果</a></li>
+                    </ul>
+                </li>
+                <li class="s">|</li>
+                <li id="m5" class="m">
+                    <h3><a target="_blank" href="">子公司</a></h3>
+                    <ul class="sub">
+                        <li><a href="#">扩展效果</a></li>
+                    </ul>
+                </li>
+                <li class="s">|</li>
+                <li id="m5" class="m">
+                    <h3><a target="_blank" href="">产业园区</a></h3>
+                </li>
+                <li class="s">|</li>
+                <li id="m5" class="m">
+                    <h3><a target="_blank" href="">人才招聘</a></h3>
+                </li>
+                <li class="s">|</li>
+                <li id="m5" class="m">
+                    <h3><a target="_blank" href="">联系我们</a></h3>
+                </li>
+            </ul>
+        </div>
+
+        <script type="text/javascript">
+            jQuery(".nav").slide({
+                type: "menu", //效果类型
+                titCell: ".m", // 鼠标触发对象
+                targetCell: ".sub", // 效果对象，必须被titCell包含
+                delayTime: 300, // 效果时间
+                triggerTime: 0, //鼠标延迟触发时间
+                returnDefault: true //返回默认状态
+            });
+        </script>
+    </div>
+
+    <div class="box banner">
+        <img src="images/banner.png" alt="铜仁市万山区开源投资集团广源置业有限责任公司">
+    </div>
+
+    <div class="box main-index">
+        <div class="toutiao pull-left">
+            <div class="media">
+                <a class="media-left media-middle" href="#">
+                    <img src="images/banner.png" alt="..." width="265" height="165" class="thumbnail">
+                </a>
+                <div class="media-body">
+                    <h4 class="media-heading text-center"><a href="javascript:;">铜仁市民族中学第七届教职工代表大会召开</a></h4>
+                    <p>在法制办学的框架下，推进依法治校、民主治校，切实维护教代会制定的各项规章制度，坚持团结并依靠全体师生，围绕学校管理新常态，对内增强工作动力，促进教师专业发展，对外树立民族...<a href="" class="xq">详情&gt;&gt;</a></p>
+                    <span class="pull-right">2016-12-22</span>
+                    <span class="pull-right">2016-12-22</span>
+                </div>
+            </div>
+        </div>
+        <div class="qiyewenhua pull-right">
+            <div class="title-index">
+                <h4><a href="#">企业文化</a></h4></div>
+        </div>
+        <div class="cl20"></div>
+    </div>
+</body>
+
+</html>
