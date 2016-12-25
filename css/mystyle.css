@@ -32,7 +32,7 @@
 
 body
 {
-    font: 14px/24px 'Oxygen', Arial, 'Hiragino Sans GB', 'Microsoft YaHei', '微软雅黑', 'STHeiti', 'WenQuanYi Micro Hei', SimSun, sans-serif;
+    font: 12px/24px 'Oxygen', Arial, 'Hiragino Sans GB', 'Microsoft YaHei', '微软雅黑', 'STHeiti', 'WenQuanYi Micro Hei', SimSun, sans-serif;
 
     background: #f6f4f4 url('../images/headbg2.gif') no-repeat center top;
 }
@@ -45,7 +45,6 @@ li
 
     list-style: none;
 }
-
 a
 {
     color: #1d1d1d;
@@ -124,6 +123,7 @@ input[type='image'],
 label[for],
 select,
 button,
+li,
 .pointer,
 .list.lh24.f14
 {
@@ -209,7 +209,6 @@ button,
 .nav h3
 {
     font-size: 100%;
-    font-size: 14px;
     font-weight: normal;
 
     float: left;
@@ -300,14 +299,31 @@ button,
 .main-index
 {
     width: 1000px;
-    padding: 20px 10px;
+    padding: 20px;
 
     background: #fff url('../images/cntBg.jpg') repeat-x;
 }
 
 .toutiao
 {
-    width: 600px;
+    width: 670px;
+}
+.toutiao h4
+{
+    font-size: 14px;
+    font-weight: bold;
+
+    margin: 10px 0 15px 0;
+}
+.toutiao p
+{
+    line-height: 1.5em;
+}
+.toutiao span
+{
+    margin-right: 15px;
+
+    color: #a45406;
 }
 .qiyewenhua
 {
@@ -316,14 +332,161 @@ button,
 }
 .title-index
 {
-    line-height: 25px;
-
     width: inherit;
     height: 25px;
 
     background: url('../images/title.jpg') 0 0 no-repeat;
 }
+.title-index h4
+{
+    font-size: 12px;
+    line-height: 24px;
 
+    text-indent: 2em;
+}
+.title-index h4 a
+{
+    color: #efefef;
+}
+.more
+{
+    font-family: sans-serif;
+    font-size: 10px;
+
+    margin-right: 10px;
+
+    color: #aaa;
+}
+.title-index a:hover,
+.more:hover
+{
+    text-decoration: none;
+
+    color: red;
+    text-shadow: 1px 1px 1px #000;
+}
+.qiyejingshen
+{
+    width: inherit;
+    height: 85px;
+    padding: 20px;
+
+    background: url(../images/qiyejingshen.jpg) no-repeat right bottom;
+}
+
+.qiyewenhua .anniu
+{
+    line-height: 29px;
+
+    display: block;
+
+    width: 130px;
+    height: 29px;
+    margin: 2px 0;
+
+    text-indent: 3.1em;
+
+    background: url(../images/anniu.gif) no-repeat;
+}
+
+/* Tab切换 */
+.slideTxtBox
+{
+    float: right;  overflow: hidden;  width: 680px; height: 240px; padding: 0;
+}
+.slideTxtBox .hd
+{
+    line-height: 28px;
+
+    height: 28px;
+
+    background: #fff url(../images/tp02_01.gif) 0 0 no-repeat;
+}
+.slideTxtBox .hd ul
+{
+    overflow: hidden; zoom: 1;
+
+    padding: 0 5px;
+}
+.slideTxtBox .hd ul li
+{
+    line-height: 24px;
+
+    float: left;
+
+    width: 80px;
+    height: 24px;
+    margin-top: 4px;
+}
+.slideTxtBox .hd ul li a
+{
+    display: block; padding: 0 15px;
+}
+.slideTxtBox .hd ul li a:hover
+{
+    text-decoration: none;
+}
+.slideTxtBox .hd ul li.on a
+{
+    font-weight: bold;
+
+    color: #334a67;
+    background: #fff url(../images/topbg.gif) no-repeat 0 0;
+}
+.slideTxtBox .bd
+{
+    padding: 10px;
+}
+.slideTxtBox .bd li
+{
+    line-height: 28px;
+
+    height: 28px;
+
+    background: url(../images/line.gif) repeat-x 0 14px;
+}
+.slideTxtBox .bd li:hover a,
+.slideTxtBox .bd li:hover .date
+{
+    color: red;
+}
+.slideTxtBox .bd li a
+{
+    padding: 0 7px;
+
+    text-indent: .5em;
+
+    background: #fff url(../images/ico6.gif) no-repeat 0 center;
+}
+.slideTxtBox .bd li .time
+{
+    background: #fff;
+}
+
+.slideTxtBox .bd li .time
+{
+    float: right;
+
+    padding-left: 7px;
+
+    color: #ad651e;
+}
+
+/*专题活动*/
+.zhuanti
+{
+    width: 265px;
+}
+.zhuanti-con
+{
+    width: inherit;
+}
+.zhuanti-con a
+{
+    display: block;
+
+    margin-top: 10px;
+}
 /*页脚*/
 
 .footer
@@ -338,5 +501,6 @@ button,
 
 .footer a
 {
-    color: #f7f9fb;
+    color: #efefef;
+    background: #2f2e2e;
 }
